@@ -3,16 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>This is my App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"
   </head>
   <body>
-    <h1>Welcome to
-
-
-       Jason's Test Site</h1>
+    <h1 class="logo">Welcome to Jason's Test Site V0.10  </h1>
     <p>Hostname: {{hostname}}</p>
     <p>IP Address: {{ip_address}}</p>
     <p>OS Type: {{ actual_os }} </p>
+    <br>
     <p>Current Time & Date: {{local_time}} </p>
+    <br>
+    <p> This is a table of environmental values: </p>
+    <table>
+      <tr>
+        <th>KEY</th>
+        <th>VALUE</th>
+      </tr>
+        <td> KEY1 </td>
+        <td> {{ KEY1 }} </td>
+      </tr>
+    </tr>
+      <td> KEY2 </td>
+      <td> {{ KEY2 }} </td>
+    </tr>
+    </table>
+
 
   </body>
 </html>
